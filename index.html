@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Portfólio de Desenvolvedor Front-End" />
+    <title>Portfólio - Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="nav-content">
+                <button class="logo" onclick="scrollToSection('hero')">&lt;Dev/&gt;</button>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#sobre" onclick="scrollToSection('sobre')">Sobre</a>
+                    <a href="#habilidades" onclick="scrollToSection('habilidades')">Habilidades</a>
+                    <a href="#projetos" onclick="scrollToSection('projetos')">Projetos</a>
+                    <a href="#contato" onclick="scrollToSection('contato')">Contato</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                    <span class="menu-icon">☰</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-element hero-bg-1"></div>
+        <div class="hero-bg-element hero-bg-2"></div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Olá, me chamo</span>
+                    <span class="hero-name" id="heroName">Jean</span>
+                </h1>
+
+                <p class="hero-subtitle" id="heroTitle">Desenvolvedor Front-End</p>
+                <p class="hero-description">Criando experiências digitais incríveis com código limpo e design moderno.</p>
+
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="scrollToSection('projetos')">Ver Projetos</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contato')">Entre em Contato</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section">
+        <div class="about-bg-decoration"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre <span class="highlight-cyan">Mim</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="image-bg"></div>
+                    <img id="aboutImage" src="assets/image/perfil-Jean.jpg" alt="Profile" class="about-image" />
+                </div>
+
+                <div class="about-content">
+                    <p class="about-text" id="aboutBio">
+                        Desenvolvedor front-end apaixonado por criar experiências web incríveis e interfaces modernas. 
+                        Especializado em transformar designs em código limpo e funcional, com foco em performance e usabilidade.
+                    </p>
+                    <p class="about-text">
+                        Com experiência em desenvolvimento web, busco constantemente aprimorar minhas habilidades e 
+                        me manter atualizado com as últimas tecnologias e tendências do mercado.
+                    </p>
+
+                    <div class="highlights" id="highlights">
+                        <!-- Highlights will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="skills-section">
+        <div class="skills-bg-decoration"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Minhas <span class="highlight-orange">Habilidades</span></h2>
+                <div class="title-underline title-underline-reverse"></div>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skills will be inserted here by JavaScript -->
+            </div>
+
+            <div class="skills-footer">
+                <p class="skills-footer-text">Sempre aprendendo e explorando novas tecnologias para criar soluções melhores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus <span class="highlight-cyan">Projetos</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- projetos inserido via javascript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em <span class="highlight-orange">Contato</span></h2>
+                <div class="title-underline title-underline-reverse"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Vamos trabalhar juntos?</h3>
+                    <p class="contact-info-text">
+                        Estou sempre aberto a novos desafios e oportunidades. 
+                        Entre em contato para discutir como posso ajudar no seu próximo projeto.
+                    </p>
+                    <div class="contact-details" id="contactDetails">
+                        <!-- Contact details will be inserted here -->
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" id="name" name="name" class="form-input" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+                    </div>
+
+                    <button type="submit" id="btn-submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                    
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 <span id="footerName">Desenvolvedor Front-End</span>. Todos os direitos reservados.</p>
+                
+                <div class="social-links" id="socialLinks">
+                    <!-- Social links will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
