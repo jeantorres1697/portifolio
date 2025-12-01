@@ -44,16 +44,16 @@
                 </div>
 
                 <h1 class="hero-title">
-                    <span class="hero-greeting">Olá, me chamo</span>
-                    <span class="hero-name" id="heroName">Jean</span>
+                    <span class="hero-greeting reveal-left">Olá, me chamo</span>
+                    <span class="hero-name reveal-left" id="heroName">Jean</span>
                 </h1>
 
                 <p class="hero-subtitle" id="heroTitle">Desenvolvedor Front-End</p>
                 <p class="hero-description">Criando experiências digitais incríveis com código limpo e design moderno.</p>
 
                 <div class="hero-cta">
-                    <button class="btn btn-primary" onclick="scrollToSection('projetos')">Ver Projetos</button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('contato')">Entre em Contato</button>
+                    <button class="btn btn-primary reveal" onclick="scrollToSection('projetos')">Ver Projetos</button>
+                    <button class="btn btn-secondary reveal" onclick="scrollToSection('contato')">Entre em Contato</button>
                 </div>
             </div>
         </div>
@@ -66,27 +66,27 @@
         
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Sobre <span class="highlight-cyan">Mim</span></h2>
+                <h2 class="section-title reveal">Sobre <span class="highlight-cyan">Mim</span></h2>
                 <div class="title-underline"></div>
             </div>
 
             <div class="about-grid">
-                <div class="about-image-wrapper">
+                <div class="about-image-wrapper reveal">
                     <div class="image-bg"></div>
                     <img id="aboutImage" src="assets/image/perfil-Jean.jpg" alt="Profile" class="about-image" />
                 </div>
 
-                <div class="about-content">
+                <div class="about-content reveal">
                     <p class="about-text" id="aboutBio">
                         Desenvolvedor front-end apaixonado por criar experiências web incríveis e interfaces modernas. 
                         Especializado em transformar designs em código limpo e funcional, com foco em performance e usabilidade.
                     </p>
-                    <p class="about-text">
+                    <p class="about-text reveal">
                         Com experiência em desenvolvimento web, busco constantemente aprimorar minhas habilidades e 
                         me manter atualizado com as últimas tecnologias e tendências do mercado.
                     </p>
 
-                    <div class="highlights" id="highlights">
+                    <div class="highlights reveal" id="highlights">
                         <!-- Highlights will be inserted here by JavaScript -->
                     </div>
                 </div>
@@ -100,29 +100,28 @@
         
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Minhas <span class="highlight-orange">Habilidades</span></h2>
+                <h2 class="section-title reveal">Minhas <span class="highlight-orange">Habilidades</span></h2>
                 <div class="title-underline title-underline-reverse"></div>
             </div>
 
-            <div class="skills-grid" id="skillsGrid">
+            <div class="skills-grid reveal" id="skillsGrid">
                 <!-- Skills will be inserted here by JavaScript -->
             </div>
 
-            <div class="skills-footer">
+            <div class="skills-footer reveal">
                 <p class="skills-footer-text">Sempre aprendendo e explorando novas tecnologias para criar soluções melhores.</p>
             </div>
         </div>
     </section>
-
     <!-- Projects Section -->
     <section id="projetos" class="projects-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Meus <span class="highlight-cyan">Projetos</span></h2>
+                <h2 class="section-title reveal">Meus <span class="highlight-cyan">Projetos</span></h2>
                 <div class="title-underline"></div>
             </div>
 
-            <div class="projects-grid" id="projectsGrid">
+            <div class="projects-grid reveal" id="projectsGrid">
                 <!-- projetos inserido via javascript -->
             </div>
         </div>
@@ -132,39 +131,39 @@
     <section id="contato" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Entre em <span class="highlight-orange">Contato</span></h2>
+                <h2 class="section-title reveal">Entre em <span class="highlight-orange">Contato</span></h2>
                 <div class="title-underline title-underline-reverse"></div>
             </div>
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3 class="contact-info-title">Vamos trabalhar juntos?</h3>
-                    <p class="contact-info-text">
+                    <h3 class="contact-info-title reveal">Vamos trabalhar juntos?</h3>
+                    <p class="contact-info-text reveal">
                         Estou sempre aberto a novos desafios e oportunidades. 
                         Entre em contato para discutir como posso ajudar no seu próximo projeto.
                     </p>
-                    <div class="contact-details" id="contactDetails">
+                    <div class="contact-details reveal" id="contactDetails">
                         <!-- Contact details will be inserted here -->
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form reveal" id="contactForm">
                     <div class="form-group">
                         <label for="name" class="form-label">Nome</label>
                         <input type="text" id="name" name="name" class="form-input" required />
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group reveal">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" id="email" name="email" class="form-input" required />
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group reveal">
                         <label for="message" class="form-label">Mensagem</label>
                         <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
                     </div>
 
-                    <button type="submit" id="btn-submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                    <button type="submit" id="btn-submit" class="btn btn-primary btn-full reveal">Enviar Mensagem</button>
                     
                     <div id="formMessage" class="form-message"></div>
                 </form>
@@ -175,10 +174,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content reveal">
                 <p class="footer-text">© 2025 <span id="footerName">Desenvolvedor Front-End</span>. Todos os direitos reservados.</p>
                 
-                <div class="social-links" id="socialLinks">
+                <div class="social-links reveal" id="socialLinks">
                     <!-- Social links will be inserted here -->
                 </div>
             </div>
