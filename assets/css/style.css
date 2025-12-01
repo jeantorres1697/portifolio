@@ -811,3 +811,44 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+
+/* ====== ANIMAÇÕES DE REVELAÇÃO ====== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left.show {
+  opacity: 1;
+  transform: translateX(0);
+  padding-top: 20px;
+}
+
+.reveal-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#btn-submit:active {
+    transform: scale(0.95);
+    background-color: #6ee6e0;
+}
