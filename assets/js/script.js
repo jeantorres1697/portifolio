@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right"); // Seleciona todos os elementos com as classes 'reveal', 'reveal-left' e 'reveal-right'
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show"); // Adiciona a classe 'show' quando o elemento entra na viewport
+      }
+    });
+  }, { threshold: 0.3 }); // Ajuste o threshold conforme necessário
+
+  elements.forEach(el => observer.observe(el)); // Observa cada elemento selecionado
+});
+
 // Mock data
 const personalInfo = {
     name: "Jean",
