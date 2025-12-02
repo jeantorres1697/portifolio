@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right"); // Seleciona todos os elementos com as classes 'reveal', 'reveal-left' e 'reveal-right'
-
-  const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show"); // Adiciona a classe 'show' quando o elemento entra na viewport
-      }
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
     });
-  }, { threshold: 0.3 }); // Ajuste o threshold conforme necessário
+}, { threshold: 0.15 });
 
-  elements.forEach(el => observer.observe(el)); // Observa cada elemento selecionado
-});
+function observeReveals() {
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right')
+        .forEach(el => observer.observe(el));
+}
+
+observeReveals();
 
 // Mock data
 const personalInfo = {
@@ -67,9 +68,9 @@ const projects = [
     {
         id: 2,
         title: "Divulgaai",
-        description: "Painel administrativo com gráficos e métricas em tempo real",
-        technologies: ["HTML5", "JavaScript", "CSS3"],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+        description: "Projeto pessoal para divulgação de serviço por profissionais autônomos, com sistema de cadastro e listagem de serviços",
+        technologies: ["HTML5", "JavaScript", "CSS3", "PHP", "MySQL"],
+        image: "assets/image/projetos/divulgaai.png",
         link: "#",
         bgColor: "#e6a23c"
     },
@@ -224,7 +225,7 @@ function renderSkills() {
 function renderProjects() {
     const container = document.getElementById('projectsGrid');
     container.innerHTML = projects.map(project => `
-        <div class="project-card" onclick="window.open('${project.link}', '_blank')">
+        <div class="project-card reveal" onclick="window.open('${project.link}', '_blank')">
             <img src="${project.image}" alt="${project.title}" class="project-image" />
             <div class="project-content" style="background-color: ${project.bgColor}">
                 <h3 class="project-title">${project.title}</h3>
@@ -235,7 +236,10 @@ function renderProjects() {
             </div>
         </div>
     `).join('');
+
+    observeReveals(); // 👈 importante para ativar reveal dos cards criados dinamicamente
 }
+
 
 // Render contact details
 function renderContactDetails() {
@@ -267,7 +271,7 @@ function renderSocialLinks() {
 }
 
 // Setup contact form
-/*function setupContactForm() {
+function setupContactForm() {
     const form = document.getElementById('contactForm');
     const messageDiv = document.getElementById('formMessage');
 
@@ -297,38 +301,7 @@ function renderSocialLinks() {
             messageDiv.className = "form-message error";
         }
     });
-}*/
-function setupContactForm() {
-    const form = document.getElementById('contactForm');
-    const messageDiv = document.getElementById('formMessage');
-
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-
-        try {
-            const response = await fetch("https://formsubmit.co/jeansilvax1697@gmail.com", {
-                method: "POST",
-                body: formData
-            });
-
-            if (response.ok) {
-                messageDiv.textContent = "Mensagem enviada com sucesso!";
-                messageDiv.className = "form-message success";
-                form.reset();
-            } else {
-                messageDiv.textContent = "Ocorreu um erro ao enviar.";
-                messageDiv.className = "form-message error";
-            }
-
-        } catch (error) {
-            messageDiv.textContent = "Erro de comunicação com o servidor.";
-            messageDiv.className = "form-message error";
-        }
-    });
 }
-
 
 
 // Setup scroll header
@@ -367,5 +340,3 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
-
-
