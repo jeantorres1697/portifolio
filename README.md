@@ -25,7 +25,6 @@ Gosto de transformar ideias em interfaces claras, responsivas e funcionais — c
 
 ## 🚀 Projetos em Destaque  
 
-|--------|----------------------|-------------|
 | **Portfólio Pessoal (este site)** | Minha “vitrine” — onde reúno meus projetos, habilidades e contatos. | HTML, CSS, JS |
 | **Valthan - Empresa de usinagem** | Site de apresentação para empresa de usinagem CNC com portfólio de serviços e formulário de contato | HTML, CSS JS e PHP para fomrmulario |
 | **Divulgaai** | Projeto pessoal para divulgação de serviço por profissionais autônomos, com sistema de cadastro e listagem de serviços | HTML, CSS, JS, PHP e MYSQL |
