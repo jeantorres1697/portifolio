@@ -267,7 +267,7 @@ function renderSocialLinks() {
 }
 
 // Setup contact form
-function setupContactForm() {
+/*function setupContactForm() {
     const form = document.getElementById('contactForm');
     const messageDiv = document.getElementById('formMessage');
 
@@ -297,7 +297,38 @@ function setupContactForm() {
             messageDiv.className = "form-message error";
         }
     });
+}*/
+function setupContactForm() {
+    const form = document.getElementById('contactForm');
+    const messageDiv = document.getElementById('formMessage');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch("https://formsubmit.co/SEU_EMAIL_AQUI", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                messageDiv.textContent = "Mensagem enviada com sucesso!";
+                messageDiv.className = "form-message success";
+                form.reset();
+            } else {
+                messageDiv.textContent = "Ocorreu um erro ao enviar.";
+                messageDiv.className = "form-message error";
+            }
+
+        } catch (error) {
+            messageDiv.textContent = "Erro de comunicação com o servidor.";
+            messageDiv.className = "form-message error";
+        }
+    });
 }
+
 
 
 // Setup scroll header
@@ -336,3 +367,4 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
