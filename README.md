@@ -49,6 +49,11 @@ Essa organização facilita a manutenção e o entendimento da estrutura, especi
 
 ---
 
+🌐 Visualizar o Portfólio
+
+Você pode acessar a versão online aqui:
+👉 [https://jeantorres1697.github.io/portifolio/#]
+
 ## 📈 Melhorias Futuras
 
 * [ ] Publicar novos projetos
