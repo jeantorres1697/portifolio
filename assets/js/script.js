@@ -308,7 +308,7 @@ function setupContactForm() {
         const formData = new FormData(form);
 
         try {
-            const response = await fetch("https://formsubmit.co/SEU_EMAIL_AQUI", {
+            const response = await fetch("https://formsubmit.co/jeansilvax1697@gmail.com", {
                 method: "POST",
                 body: formData
             });
@@ -367,4 +367,5 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
 
