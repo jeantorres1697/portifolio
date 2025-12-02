@@ -148,6 +148,11 @@
                 </div>
 
                 <form class="contact-form reveal" id="contactForm">
+
+                     <!-- Necessário para evitar captcha e definir template -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                    
                     <div class="form-group">
                         <label for="name" class="form-label">Nome</label>
                         <input type="text" id="name" name="name" class="form-input" required />
@@ -187,3 +192,4 @@
     <script src="assets/js/script.js"></script>
 </body>
 </html>
+
