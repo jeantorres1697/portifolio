@@ -18,7 +18,8 @@ const personalInfo = {
     name: "Jean",
     title: "Desenvolvedor Front-End",
     email: "jeansilvax1697@gmail.com",
-    location: "Brasil",
+    location: "Jaraguá do Sul, SC",
+    telephone: "(92) 98157-8840",
     bio: "Desenvolvedor front-end apaixonado por criar experiências web incríveis e interfaces modernas. Especializado em transformar designs em código limpo e funcional, com foco em performance e usabilidade."
 };
 
@@ -257,6 +258,14 @@ function renderContactDetails() {
             </div>
             <span class="contact-detail-text">${personalInfo.location}</span>
         </div>
+        <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2L8.09 9.91a16 16 0 0 0 6 6l1.38-1.38a2 2 0 0 1 2-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+            </div>
+            <span class="contact-detail-text">${personalInfo.telephone}</span>
+        </div>
     `;
 }
 
@@ -340,4 +349,5 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
 
