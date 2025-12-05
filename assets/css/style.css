@@ -682,6 +682,7 @@ body {
 
 .contact-detail-icon {
     color: #80fff9;
+    display: flex;
 }
 
 .contact-detail-text {
@@ -852,3 +853,4 @@ body {
     transform: scale(0.95);
     background-color: #6ee6e0;
 }
+
