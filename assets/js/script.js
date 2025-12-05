@@ -19,7 +19,7 @@ const personalInfo = {
     title: "Desenvolvedor Front-End",
     email: "jeansilvax1697@gmail.com",
     location: "Jaraguá do Sul, SC",
-    telephone: "(92) 98157-8840",
+    telephone: "(47) 98839-6337",
     bio: "Desenvolvedor front-end apaixonado por criar experiências web incríveis e interfaces modernas. Especializado em transformar designs em código limpo e funcional, com foco em performance e usabilidade."
 };
 
@@ -349,5 +349,6 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
 
 
