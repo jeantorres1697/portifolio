@@ -123,7 +123,7 @@ const allProjects = [
         type: "modal", 
         gallery: [
             "assets/image/projetos/Votacao/inicio.png",
-            "assets/image/projetos/Votacao/Eleitor_cadastrado.png",
+            "assets/image/projetos/Votacao/eleitor_cadastrado.png",
             "assets/image/projetos/Votacao/novo_eleitor.png",
             "assets/image/projetos/Votacao/vereador.png",
             "assets/image/projetos/Votacao/vereador_digitado.png",
@@ -511,3 +511,4 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
