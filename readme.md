@@ -8,7 +8,7 @@ Bem-vindo ao repositório do meu portfólio. Este projeto foi desenvolvido para 
 
 ## 🔗 Link para Acesso
 
-**Acesse o portfólio online:** [jeantorres1697.github.io](https://jeantorres1697.github.io/portifolio)
+**Acesse o portfólio online:** [Clique Aqui](https://jeantorres1697.github.io/portifolio)
 
 ---
 
@@ -54,3 +54,4 @@ O site é bilingue (Português/Inglês). Toda a troca de conteúdo é feita via 
 │   └── image/      #Organização por projetos (ShoutWork, HelpDesk, etc.)
 └── index.html      #Ponto de entrada do portfólio
 ```
+
