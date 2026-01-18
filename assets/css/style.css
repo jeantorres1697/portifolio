@@ -75,7 +75,7 @@ body {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid var(--border-light);
-  padding: 12px 30px;
+  padding: 12px 20px;
   border-radius: 100px;
   display: flex;
   justify-content: space-between;
@@ -648,3 +648,4 @@ textarea {
 body.modal-open .back-to-top {
   display: none !important;
 }
+
