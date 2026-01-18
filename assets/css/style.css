@@ -436,6 +436,7 @@ textarea:focus {
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 25px;
   margin-bottom: 30px;
 }
@@ -648,4 +649,5 @@ textarea {
 body.modal-open .back-to-top {
   display: none !important;
 }
+
 
