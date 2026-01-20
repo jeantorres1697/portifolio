@@ -30,6 +30,7 @@ const translations = {
         "proj-www": "Um tributo ao primeiro site da história, recriado com uma estética moderna e minimalista.<br><strong>Conceito Retrô-Futurista</strong>: Design inspirado no layout original de 1991, mas atualizado com componentes modernos.<br><strong>Fundamentos Web</strong>: Projeto focado em semântica pura, demonstrando domínio em acessibilidade e estrutura de dados.<br><strong>Interface Responsiva</strong>: Diferente do original, esta versão é totalmente adaptável a qualquer dispositivo.<br><strong>Site:</strong><a href='https://jeantorres1697.github.io/Atv_pub_projeto/'>Clique aqui</a>",
         "proj-vota": "Simulador de votação dinâmica desenvolvido com foco em manipulação de objetos e estados via JavaScript.<br><strong>Lógica Orientada a Dados</strong>: Sistema estruturado em objetos JS que gerenciam informações de candidatos.<br><strong>Interatividade Fluida</strong>: Renderização dinâmica do DOM que atualiza fotos, nomes e partidos em tempo real.<br><strong>Fluxo de Validação</strong>: Algoritmos de controle para processamento de votos com transições suaves entre as etapas.<br><strong>Site:</strong><a href='https://jeantorres1697.github.io/votacao/'>Clique Aqui</a>",
         "proj-HelpDesk": "Solução personalizada para centralizar o suporte técnico, substituindo processos informais por um fluxo de trabalho inteligente. <br><strong>Dashboards & KPIs</strong>: Painel administrativo com indicadores em tempo real.<br><strong>Linha do Tempo Dinâmica</strong>: Rastreabilidade total com status visual (cores) e sistema de anexos por etapa. <br><strong>Priorização Estratégica</strong>: Gestão por níveis de criticidade para otimizar o tempo de resposta.",
+        "proj-gerar-curriculo": "Gerador de currículos profissional focado em padronização e agilidade na criação de documentos profissionais.<br><strong>Automação de Layout</strong>: Transforma dados de formulários em currículos estruturados e prontos para impressão ou PDF.<br><strong>Interface Intuitiva</strong>: Fluxo de preenchimento segmentado para facilitar a organização das informações acadêmicas e profissionais.<br><strong>Design Clean</strong>: Focado em legibilidade e seriedade, seguindo padrões exigidos por recrutadores.<br><strong>Website:</strong> <a href='https://jeantorres1697.github.io/gerar_curriculo/' target='_blank'>Clique aqui</a>",
         "view-project": "VER PROJETO →",
         "view-details": "VER DETALHES →",
         "level-advanced": "Avançado",
@@ -66,6 +67,7 @@ const translations = {
         "proj-www":"A tribute to the first website in history, recreated with a modern and minimalist aesthetic.<br><strong>Retro-Futuristic Concept</strong>: Design inspired by the original 1991 layout, but updated with modern components  .<br><strong>Web Fundamentals</strong>: Project focused on pure semantics, demonstrating mastery in accessibility and data structure.<br><strong>Responsive Interface</strong>: Unlike the original, this version is fully adaptable to any device.<br><strong>Website:</strong><a href='https://jeantorres1697.github.io/Atv_pub_projeto/'>Click here</a>" ,
         "proj-vota": "Dynamic voting simulator developed with a focus on object and state manipulation via JavaScript.<br><strong>Data-Oriented Logic</strong>: Structured system using JS objects to manage candidate information.<br><strong>Fluid Interactivity</strong>: Dynamic DOM rendering that updates photos, names, and parties in real-time.<br><strong>Validation Flow</strong>: Control algorithms for vote processing with smooth transitions between stages.<br><strong>Website:</strong><a href='https://jeantorres1697.github.io/votacao/'>Click here</a>",
         "proj-HelpDesk": "Custom solution to centralize technical support, replacing informal processes with a structured and intelligent workflow.<br><strong>Dashboards & KPIs</strong>: Administrative panel with real-time indicators.<br><strong>Dynamic Timeline</strong>: Full traceability with visual status (colors) and attachment system per stage.<br><strong>Strategic Prioritization</strong>: Criticality level management to optimize response time.",
+        "proj-gerar-curriculo": "Professional resume generator focused on standardization and speed in creating career documents.<br><strong>Layout Automation</strong>: Transforms form data into structured resumes ready for printing or PDF export.<br><strong>Intuitive Interface</strong>: Segmented input flow to facilitate the organization of academic and professional information.<br><strong>Clean Design</strong>: Focused on readability and professionalism, following standards required by recruiters.<br><strong>Website:</strong> <a href='https://jeantorres1697.github.io/gerar_curriculo/' target='_blank'>Click Here</a>",
         "view-project": "VIEW PROJECT →",
         "view-details": "VIEW DETAILS →",
         "level-advanced": "Advanced",
@@ -164,6 +166,17 @@ const allProjects = [
                 "assets/image/projetos/HelpDesk/gestao_usuario.png",
                 "assets/image/projetos/HelpDesk/gestao_usuario_categoria.png"
                 ]
+    },
+        { 
+        id: "proj-gerar-curriculo", 
+        title: "Gerador de Currículo", 
+        tech: ["HTML", "CSS", "JS"], 
+        img: "assets/image/projetos/curriculo/capa.png", // Ajuste o caminho da imagem aqui
+        type: "modal",
+        gallery: [
+            "assets/image/projetos/curriculo/capa.png",
+            "assets/image/projetos/curriculo/preview.png"
+        ] 
     }
 ];
 
@@ -511,5 +524,6 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
 
 
