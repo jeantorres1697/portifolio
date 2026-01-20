@@ -171,11 +171,10 @@ const allProjects = [
         id: "proj-gerar-curriculo", 
         title: "Gerador de Currículo", 
         tech: ["HTML", "CSS", "JS"], 
-        img: "assets/image/projetos/curriculo/capa.png", // Ajuste o caminho da imagem aqui
+        img: "assets/image/projetos/GerarCurriculo/index.png", // Ajuste o caminho da imagem aqui
         type: "modal",
         gallery: [
-            "assets/image/projetos/curriculo/capa.png",
-            "assets/image/projetos/curriculo/preview.png"
+            "assets/image/projetos/GerarCurriculo/index.png"
         ] 
     }
 ];
@@ -524,6 +523,7 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
 
 
 
