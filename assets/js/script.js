@@ -7,7 +7,7 @@ const translations = {
         "nav-hire": "Contratar",
         "hero-badge": "Desenvolvedor Front-End",
         "hero-title": "Design <span class='highlight'>minimalista</span>, código robusto.",
-        "hero-desc": "Desenvolvendo interfaces de alto padrão com foco em usabilidade e performance em Jaraguá do Sul.",
+        "hero-desc": "Transformo visões em realidade digital, desenvolvendo interfaces de alto padrão que equilibram estética minimalista com uma performance impecável. Meu foco é criar experiências fluidas e intuitivas que não apenas impressionam visualmente, mas impulsionam o sucesso do seu projeto.",
         "btn-work": "Meus Trabalhos",
         "btn-talk": "Vamos conversar?",
         "skills-sub": "Expertise",
@@ -44,7 +44,7 @@ const translations = {
         "nav-hire": "Hire Me",
         "hero-badge": "Front-End Developer",
         "hero-title": "<span class='highlight'>Minimalist</span> design, robust code.",
-        "hero-desc": "Developing high-standard interfaces focusing on usability and performance in Brazil.",
+        "hero-desc": "I transform visions into digital reality, developing high-standard interfaces that balance minimalist aesthetics with an impeccable performance. My focus is to create fluid and intuitive experiences that not only impress visually, but boost the success of your project.",
         "btn-work": "My Work",
         "btn-talk": "Let's talk?",
         "skills-sub": "Expertise",
@@ -523,6 +523,7 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
 
 
 
