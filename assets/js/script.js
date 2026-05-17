@@ -98,6 +98,7 @@ const translations = {
 };
 
 let currentLang = "pt";
+let countersAnimated = false;
 
 const allProjects = [
     {
@@ -288,8 +289,55 @@ function renderMetrics() {
     const projectCount = document.getElementById("projectCount");
     const stackCount = document.getElementById("stackCount");
 
-    if (projectCount) projectCount.textContent = String(allProjects.length).padStart(2, "0");
-    if (stackCount) stackCount.textContent = String(skills.length).padStart(2, "0");
+    if (projectCount) projectCount.textContent = "00";
+    if (stackCount) stackCount.textContent = "00";
+}
+
+function animateCounter(element, target, duration = 1200) {
+    if (!element) return;
+
+    const startTime = performance.now();
+
+    const updateValue = (currentTime) => {
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        const easedProgress = 1 - Math.pow(1 - progress, 3);
+        const currentValue = Math.round(target * easedProgress);
+
+        element.textContent = String(currentValue).padStart(2, "0");
+
+        if (progress < 1) {
+            window.requestAnimationFrame(updateValue);
+        }
+    };
+
+    window.requestAnimationFrame(updateValue);
+}
+
+function initMetricsAnimation() {
+    const projectCount = document.getElementById("projectCount");
+    const stackCount = document.getElementById("stackCount");
+    const heroStrip = document.querySelector(".hero-strip");
+
+    if (!projectCount || !stackCount || !heroStrip) return;
+
+    if (countersAnimated) {
+        projectCount.textContent = String(allProjects.length).padStart(2, "0");
+        stackCount.textContent = String(skills.length).padStart(2, "0");
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting || countersAnimated) return;
+
+            countersAnimated = true;
+            animateCounter(projectCount, allProjects.length);
+            animateCounter(stackCount, skills.length, 1000);
+            observer.disconnect();
+        });
+    }, { threshold: 0.55 });
+
+    observer.observe(heroStrip);
 }
 
 function renderSkills() {
@@ -652,6 +700,7 @@ function render() {
     bindScrollLinks(document);
     initRevealObserver();
     initSectionObserver();
+    initMetricsAnimation();
     updateBackToTop();
 }
 
