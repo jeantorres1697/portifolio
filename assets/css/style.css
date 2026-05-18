@@ -1154,3 +1154,7 @@ textarea {
     padding: 22px;
   }
 }
+
+.telWpp:hover {
+  color: var(--acid);
+}
