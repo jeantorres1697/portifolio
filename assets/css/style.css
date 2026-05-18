@@ -290,7 +290,7 @@ textarea {
 }
 
 .hero-title {
-  font-size: clamp(3.8rem, 8vw, 7.4rem);
+  font-size: clamp(3.8rem, 8vw, 4.4rem);
   line-height: 0.92;
   max-width: 10ch;
 }
@@ -388,7 +388,7 @@ textarea {
   z-index: 1;
   width: 100%;
   height: 100%;
-  min-height: 640px;
+  min-height: 675.63px;
   object-fit: cover;
   border-radius: 36px 120px 36px 36px;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -554,10 +554,6 @@ textarea {
   align-items: stretch;
   border-radius: 36px;
   overflow: hidden;
-}
-
-.showcase-row.reverse .showcase-inner {
-  grid-template-columns: 120px minmax(340px, 0.88fr) minmax(0, 1.12fr);
 }
 
 .showcase-index-col {
@@ -1136,6 +1132,10 @@ textarea {
 
   .showcase-copy {
     padding: 0 18px 22px;
+  }
+
+  .showcase-title {
+    display: none;
   }
 
   .showcase-header p,
