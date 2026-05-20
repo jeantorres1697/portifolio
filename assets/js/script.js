@@ -6,11 +6,11 @@ const translations = {
     "nav-hire": "Contratar",
     "hero-badge": "Desenvolvedor Front-End",
     "hero-title":
-      "Interfaces com <span class='highlight'>presenca</span>, codigo com consistencia.",
+      "Interfaces com <span class='highlight'>presençaa</span>, codigo com consistência.",
     "hero-desc":
-      "Desenvolvendo interfaces de alto padrao com foco em usabilidade, performance e impacto visual.",
+      "Desenvolvendo interfaces de alto padrão com foco em usabilidade, performance e impacto visual.",
     "hero-note":
-      "Experiencias digitais com presenca visual, clareza de navegacao e execucao responsiva.",
+      "Experiências digitais com presenca visual, clareza de navegação e execução responsiva.",
     "hero-metric-projects-label": "Projetos em destaque",
     "hero-metric-stack-label": "Stack principal",
     "btn-work": "Meus Trabalhos",
@@ -18,11 +18,11 @@ const translations = {
     "skills-sub": "Expertise",
     "skills-title": "Minha <span class='highlight-orange'>Stack</span>",
     "skills-panel-text":
-      "Cada bloco foi organizado para mostrar dominio tecnico, clareza visual e consistencia de execucao.",
+      "Cada bloco foi organizado para mostrar dominio técnico, clareza visual e consistência de execução.",
     "proj-sub": "Portfolio",
     "proj-title": "Galeria de <span class='highlight-cyan'>Projetos</span>",
     "projects-lead":
-      "Uma selecao de interfaces, sistemas e experiencias construidas com foco em performance, navegacao e apresentacao.",
+      "Uma seleção de interfaces, sistemas e experiências construídas com foco em performance, navegação e apresentação.",
     "contact-sub": "Contato",
     "contact-title": "Vamos criar algo <span class='highlight'>novo?</span>",
     "contact-desc": "Jaragua do Sul, SC | Atendimento remoto.",
@@ -32,27 +32,27 @@ const translations = {
     "btn-send": "Preparar E-mail",
     "sending": "Preparando...",
     "message-sent": "Seu aplicativo de e-mail sera aberto.",
-    "message-retry": "Nao foi possivel preparar o e-mail.",
+    "message-retry": "Não foi possivel preparar o e-mail.",
     "skill-html": "Estrutura semantica, SEO e acessibilidade.",
     "skill-css": "Layouts modernos, Grid, Flexbox e animacoes.",
     "skill-js": "Interatividade, manipulacao de DOM e ES6+.",
     "skill-php": "Integracao com backend e bancos de dados MySQL.",
     "proj-valthan":
-      "Site institucional de alta performance desenvolvido para uma industria metalurgica especializada em solucoes CNC.<br><strong>Interface Industrial</strong>: Design moderno focado na apresentacao de servicos como Tornearia e Corte a Laser.<br><strong>Conversao B2B</strong>: Fluxos otimizados para solicitacao de orcamentos e contato direto.<br><strong>SEO & Performance</strong>: Estrutura leve e otimizada para buscadores, focada no mercado regional.<br><strong>Site:</strong> <a href='https://valthan.com.br/' target='_blank' rel='noopener noreferrer'>https://valthan.com.br/</a>",
+      "Site institucional de alta performance desenvolvido para uma industria metalurgica especializada em soluções CNC.<br><strong>Interface Industrial</strong>: Design moderno focado na apresentação de serviços como Tornearia e Corte a Laser.<br><strong>Conversão B2B</strong>: Fluxos otimizados para solicitação de orçamentos e contato direto.<br><strong>SEO & Performance</strong>: Estrutura leve e otimizada para buscadores, focada no mercado regional.<br><strong>Site:</strong> <a href='https://valthan.com.br/' target='_blank' rel='noopener noreferrer'>https://valthan.com.br/</a>",
     "proj-divulga":
-      "Plataforma completa de classificados desenvolvida para conectar prestadores de servicos autonomos a clientes finais.<br><strong>Ecossistema de Anuncios</strong>: Sistema robusto para criar, editar e gerenciar anuncios com suporte a multiplas imagens e categorias.<br><strong>Perfil & Avaliacoes</strong>: Area restrita para profissionais com historico de servicos e sistema de feedback.<br><strong>UX Responsiva</strong>: Interface intuitiva com busca inteligente por localizacao e filtros para facilitar a conversao.",
+      "Plataforma completa de classificados desenvolvida para conectar prestadores de serviços autonomos a clientes finais.<br><strong>Ecossistema de Anúncios</strong>: Sistema robusto para criar, editar e gerenciar anúncios com suporte a multiplas imagens e categorias.<br><strong>Perfil & Avaliações</strong>: Área restrita para profissionais com histórico de serviços e sistema de feedback.<br><strong>UX Responsiva</strong>: Interface intuitiva com busca inteligente por localização e filtros para facilitar a conversão.",
     "proj-onepiece":
-      "Landing page interativa desenvolvida como tributo a tripulacao de One Piece, focada em design visual e fluidez.<br><strong>Interface Tematica</strong>: Experiencia com navegacao em carrossel dinamico para apresentar cada membro do bando.<br><strong>Manipulacao de DOM</strong>: Uso de JavaScript para transicoes suaves, descricoes e planos de fundo personalizados.<br><strong>Navegacao Responsiva</strong>: Controles intuitivos projetados para oferecer uma visualizacao detalhada das informacoes.<br><strong>Site:</strong> <a href='https://jeantorres1697.github.io/onepiece.github.io/' target='_blank' rel='noopener noreferrer'>https://jeantorres1697.github.io/onepiece.github.io/</a>",
+      "Landing page interativa desenvolvida como tributo a tripulaço de One Piece, focada em design visual e fluidez.<br><strong>Interface Temática</strong>: Experiência com navegação em carrossel dinâmico para apresentar cada membro do bando.<br><strong>Manipulação de DOM</strong>: Uso de JavaScript para transições suaves, descricoes e planos de fundo personalizados.<br><strong>Navegação Responsiva</strong>: Controles intuitivos projetados para oferecer uma visualização detalhada das informações.<br><strong>Site:</strong> <a href='https://jeantorres1697.github.io/onepiece.github.io/' target='_blank' rel='noopener noreferrer'>https://jeantorres1697.github.io/onepiece.github.io/</a>",
     "proj-www":
-      "Um tributo ao primeiro site da historia, recriado com uma estetica moderna e minimalista.<br><strong>Conceito Retro-Futurista</strong>: Design inspirado no layout original de 1991, mas atualizado com componentes modernos.<br><strong>Fundamentos Web</strong>: Projeto focado em semantica pura, demonstrando dominio em acessibilidade e estrutura de dados.<br><strong>Interface Responsiva</strong>: Diferente do original, esta versao e totalmente adaptavel a qualquer dispositivo.<br><strong>Site:</strong> <a href='https://jeantorres1697.github.io/Atv_pub_projeto/' target='_blank' rel='noopener noreferrer'>https://jeantorres1697.github.io/Atv_pub_projeto/</a>",
+      "Um tributo ao primeiro site da história, recriado com uma estética moderna e minimalista.<br><strong>Conceito Retro-Futurista</strong>: Design inspirado no layout original de 1991, mas atualizado com componentes modernos.<br><strong>Fundamentos Web</strong>: Projeto focado em semântica pura, demonstrando dominio em acessibilidade e estrutura de dados.<br><strong>Interface Responsiva</strong>: Diferente do original, esta versão e totalmente adaptável a qualquer dispositivo.<br><strong>Site:</strong> <a href='https://jeantorres1697.github.io/Atv_pub_projeto/' target='_blank' rel='noopener noreferrer'>https://jeantorres1697.github.io/Atv_pub_projeto/</a>",
     "proj-vota":
-      "Simulador de votacao dinamica desenvolvido com foco em manipulacao de objetos e estados via JavaScript.<br><strong>Logica Orientada a Dados</strong>: Sistema estruturado em objetos JS que gerenciam informacoes de candidatos.<br><strong>Interatividade Fluida</strong>: Renderizacao dinamica do DOM que atualiza fotos, nomes e partidos em tempo real.<br><strong>Fluxo de Validacao</strong>: Algoritmos de controle para processamento de votos com transicoes suaves entre as etapas.<br><strong>Site:</strong> <a href='https://jeantorres1697.github.io/votacao/' target='_blank' rel='noopener noreferrer'>https://jeantorres1697.github.io/votacao/</a>",
+      "Simulador de votação dinâmica desenvolvido com foco em manipulação de objetos e estados via JavaScript.<br><strong>Logica Orientada a Dados</strong>: Sistema estruturado em objetos JS que gerenciam informações de candidatos.<br><strong>Interatividade Fluida</strong>: Renderizacao dinâmica do DOM que atualiza fotos, nomes e partidos em tempo real.<br><strong>Fluxo de Validação</strong>: Algoritmos de controle para processamento de votos com transições suaves entre as etapas.<br><strong>Site:</strong> <a href='https://jeantorres1697.github.io/votacao/' target='_blank' rel='noopener noreferrer'>https://jeantorres1697.github.io/votacao/</a>",
     "proj-HelpDesk":
-      "Solucao personalizada para centralizar o suporte tecnico, substituindo processos informais por um fluxo de trabalho inteligente.<br><strong>Dashboards & KPIs</strong>: Painel administrativo com indicadores em tempo real.<br><strong>Linha do Tempo Dinamica</strong>: Rastreabilidade total com status visual e sistema de anexos por etapa.<br><strong>Priorizacao Estrategica</strong>: Gestao por niveis de criticidade para otimizar o tempo de resposta.",
+      "Solução personalizada para centralizar o suporte tecnico, substituindo processos informais por um fluxo de trabalho inteligente.<br><strong>Dashboards & KPIs</strong>: Painel administrativo com indicadores em tempo real.<br><strong>Linha do Tempo Dinâmica</strong>: Rastreabilidade total com status visual e sistema de anexos por etapa.<br><strong>Priorização Estrategica</strong>: Gestão por níveis de criticidade para otimizar o tempo de resposta.",
     "view-details": "Ver detalhes",
-    "level-advanced": "Avancado",
-    "level-medium": "Medio",
-    "gallery-images": "imagens na galeria"
+    "level-advanced": "Avançado",
+    "level-medium": "Médio",
+    "gallery-images": "Imagens na galeria"
   },
   en: {
     "nav-skills": "Skills",
