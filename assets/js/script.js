@@ -369,7 +369,7 @@ function renderProjects() {
           </div>
           <div class="showcase-footer">
             <span class="showcase-count">${project.gallery.length} ${translations[currentLang]["gallery-images"]}</span>
-            <button class="showcase-link" onclick="openProjectModal('${project.id}')">${translations[currentLang]["view-details"]}</button>
+            <button class="showcase-link" onclick="gtag('event', 'click_ver_detalhes', {event_category: 'Projeto',event_label: '${project.title}'}); openProjectModal('${project.id}')">${translations[currentLang]["view-details"]}</button>
           </div>
         </div>
       </div>
@@ -382,7 +382,7 @@ function renderSocialLinks() {
   if (!container) return;
 
   container.innerHTML = socialLinks.map((link) => `
-    <a href="${link.url}" target="_blank" rel="noopener noreferrer" aria-label="${link.name}" class="social-icon">${link.icon}</a>
+    <a href="${link.url}" target="_blank" rel="noopener noreferrer" aria-label="${link.name}" class="social-icon" onclick="gtag('event', 'click_social_${link.name.toLowerCase()}', {event_category: 'Social', event_label: '${link.name}'});">${link.icon}</a>
   `).join("");
 }
 
@@ -571,6 +571,13 @@ function initForm() {
     const mensagem = String(formData.get("mensagem") || "").trim();
 
     if (!nome || !email || !mensagem) return;
+    
+    if (typeof gtag === "function") {
+      gtag("event", "formulario_enviado", {
+        event_category: "Lead",
+        event_label: "Contato Portfolio"
+      });
+    }
 
     const originalText = submitButton ? submitButton.textContent : "";
     if (submitButton) {
