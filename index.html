@@ -21,6 +21,16 @@
       sizes="16x16"
       href="assets/image/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="assets/image/favicon_io/site.webmanifest" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3F03L6L0T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Y3F03L6L0T');
+    </script>
   </head>
 
   <body>
@@ -47,9 +57,11 @@
               <span></span>
               <span></span>
             </button>
-            <a href="#contato" class="nav-cta" data-i18n="nav-hire"
-              >Contratar</a
-            >
+            <a href="#contato" class="nav-cta" data-i18n="nav-hire" onclick="
+              gtag('event', 'click_contratar', {
+                event_category: 'Conversao',
+                event_label: 'Navbar'});">
+              Contratar</a>
           </div>
         </div>
       </header>
@@ -72,13 +84,23 @@
               <div class="hero-cta reveal">
                 <button
                   class="btn btn-primary"
-                  onclick="scrollToSection('projetos')"
+                  onclick="
+                    gtag('event', 'click_meus_trabalhos', {
+                      event_category: 'Navegacao',
+                      event_label: 'Hero Section'
+                    });
+                    scrollToSection('projetos')"
                   data-i18n="btn-work">
                   Meus Trabalhos
                 </button>
                 <button
                   class="btn btn-secondary"
-                  onclick="scrollToSection('contato')"
+                    onclick="
+                      gtag('event', 'click_vamos_conversar', {
+                        event_category: 'Contato',
+                        event_label: 'Hero CTA'
+                      });
+                      scrollToSection('contato');"
                   data-i18n="btn-talk">
                   Vamos conversar?
                 </button>
@@ -201,7 +223,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="telWpp"
-                      style="text-decoration: none">
+                      style="text-decoration: none" onclick="gtag('event', 'click_whatsapp', {
+                      event_category: 'Contato', event_label: 'Whatsapp Footer'});">
                       (92) 98157-8840
                     </a>
                   </p>
