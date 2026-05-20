@@ -6,7 +6,7 @@ const translations = {
     "nav-hire": "Contratar",
     "hero-badge": "Desenvolvedor Front-End",
     "hero-title":
-      "Interfaces com <span class='highlight'>presençaa</span>, codigo com consistência.",
+      "Interfaces com <span class='highlight'>presença</span>, código com consistência.",
     "hero-desc":
       "Desenvolvendo interfaces de alto padrão com foco em usabilidade, performance e impacto visual.",
     "hero-note":
