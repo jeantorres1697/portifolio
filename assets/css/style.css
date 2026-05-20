@@ -118,7 +118,7 @@ textarea {
 }
 
 .section-shell {
-  padding: 7rem 0;
+  padding: 3rem 0;
 }
 
 #header {
@@ -256,7 +256,7 @@ textarea {
 }
 
 .hero-section {
-  padding-top: 4rem;
+  padding-top: 3rem;
   min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
